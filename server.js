@@ -3,12 +3,12 @@ const express = require('express');
 
 // Constants
 const PORT = 3000;
-const HOST = '0.0.0.0';
+// const HOST = '0.0.0.0';
 
 // App
 const app = express();
 app.get('/', function(req, res) {
-  res.send('Hello this change is done!');
+  res.send('Hellote! I am testing my CI/CD Pipeline');
 });
 
 var port = process.env.PORT||PORT;
